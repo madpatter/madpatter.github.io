@@ -40,10 +40,6 @@
             height: 100%;
         }
 
-        .content {
-            max-width: 960px;
-        }
-
         a {
             text-decoration: none;
             color: #ff5744;
@@ -57,76 +53,35 @@
             width: 60%;
             margin: 0 auto;
             padding: 20px 50px;
-            display: flex;
-            align-items: center;
         }
         header img {
             max-width: 200px;
         }
 
         header .img-col {
-            flex: 0 1 auto;
-            margin-right: 40px;
             text-align: center;
         }
 
         header .nav {
-            flex: 1 1 auto;
+            max-width: 600px;
             display: flex;
+            flex-wrap: wrap;
+            align-items: center;
             justify-content: space-around;
-        }
-        header a {
             font-family: 'Libre Baskerville', serif;
-            display: block;
             font-size: 20px;
             color: black;
-            flex: 1 1 auto;
             padding: 20px;
             font-style: italic;
             text-align: center;
-            border-top: 2px solid black;
-            border-bottom: 1px solid black;
             letter-spacing: 2px;
+            margin: 0 auto;
         }
 
         footer {
             padding: 30px 50px;
             text-align: center;
             color: #777;
-        }
-
-        .content {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .section {
-            padding-bottom: 50px;
-        }
-
-        .bio {
-            display: flex;
-        }
-
-        .bio .img-col {
-            margin: 20px 40px 20px 0;
-            flex: 0 1 auto;
-            text-align: center;
-        }
-
-        .bio .img-col img {
-            width: 100%;
-            max-width: 250px;
-            border-radius: 10px;
-        }
-
-        .bio .text-col {
-            flex: 0 1 80%;
-        }
-
-        .big {
-            font-size: 1.3em;
         }
 
         h2 {
@@ -156,9 +111,87 @@
             margin: 1em 0 1em 1em;
         }
 
+        hr {
+            border-width: 0px;
+            height: 1px;
+            background-color: #777;
+        }
+
+        .content {
+            padding: 20px 50px;
+            margin: 0 auto;
+        }
+
+        .section {
+            padding-bottom: 30px;
+            margin: 0 auto;
+        }
+
+        #about {
+            display: flex;
+            max-width: 800px;
+        }
+
+        #contact {
+            max-width: 800px;
+        }
+
+        #about .img-col {
+            margin: 20px 40px 20px 0;
+            flex: 0 1 auto;
+            text-align: center;
+        }
+
+        #about .img-col img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 10px;
+        }
+
+        #about .text-col {
+            flex: 0 1 80%;
+        }
+
+        #works {
+            max-width: 1280px;
+        }
+
+        .big {
+            font-size: 1.3em;
+        }
+
+        .small {
+            font-size: .8em;
+        }
+
+
+        #works ul {
+            padding: 0;
+            margin-bottom: 40px;
+        }
+
+        #works ul li {
+            list-style: none;
+            display: flex;
+        }
+
+        #works .img-col img {
+            padding: 10px;
+            border: 1px solid #ddd;
+            max-width: calc(100% - 2px);
+        }
+
+        #works .img-col {
+            flex: 0 1 auto;
+        }
+
+        #works .text-col {
+            margin-right: 5%;
+            flex: 1 0 60%;
+        }
+
         @media screen and (max-width: 768px) {
             
-
             header {
                 flex-wrap: wrap;
                 padding: 20px 0px;
@@ -170,27 +203,47 @@
                 margin-right: 0;
             }
 
-            header a {
-                padding: 20px 5px;
-            }
-            
         }
 
         @media screen and (max-width: 600px) {
-            .bio {
+            .content {
+                padding: 20px;
+            }
+
+            #about {
                 flex-wrap: wrap-reverse;
             }
 
-            .bio .img-col {
+            #about .img-col {
                 flex: 0 1 100%;
                 margin: 20px;
             }
 
-            .bio .text-col {
+            #about .text-col {
                 flex: 0 1 100%;
+                margin: 0;
             }
-            .bio .img-col img {
+            #about .img-col img {
                 max-width: 150px;
+            }
+
+            #works li {
+                flex-wrap: wrap-reverse;
+            }
+
+            #works .img-col {
+                flex: 0 1 100%;  
+                text-align: center;
+                margin: 0 0 20px;              
+            }
+
+            #works .img-col img {
+                max-height: 200px;
+            }
+
+            #works .text-col {
+                flex: 0 1 100%;
+                margin: 0;
             }
         }
     </style>
@@ -205,16 +258,18 @@
             <a href='#about' class='header-link'>
                 about
             </a>
-            <a href='#works' class='header-link'>
-                works
-            </a>
+            <div>/</div>
             <a href='#contact' class='header-link'>
                 contact
+            </a>
+            <div>/</div>
+            <a href='#works' class='header-link'>
+                works
             </a>
         </div>
     </header>
     <div class='content'>
-        <div id='about' class='bio section'>
+        <div id='about' class='section'>
             <div class='img-col'>
                 <img src='assets/portrait.jpg' alt='Photo of Gina Chen' />
             </div>
@@ -222,28 +277,6 @@
                 <p><span class='big'>Gina Chen</span> is an author, software engineer, and occasional artist. She spent most of her life thinking she hated writing, until she churned out a few hundred thousand words of fanfiction and decided that <i>maybe</i> she was a writer. She tells stories about (anti)heroines, the unfortunate creatures who love them, and the kind of cleverness that brings trouble in its wake.</p>
                 <p>She resides in sunny Southern California.</p>
             </div>
-        </div>
-
-        <div id='works' class='section'>
-            <h2>+ Works +</h2>
-            <h4>Published</h4>
-            <ul>
-                <li>
-                    <a href="https://foreshadowya.com/articles/12-fools" target="_blank">"Fools"</a>, Foreshadow YA (Issue 2, Feb 2019)
-                    <blockquote>
-                        <i>Ahma says my parents were a pair of fools. Runaways, who bartered the promise of my mother's womb to a witch to escape a kingdom that would sooner see them dead than in love. </i>
-                    </blockquote>
-                </li>
-            </ul>
-            <h4>Currently Writing</h4>
-            <ul>
-                <li>
-                    <i>VILE VILE VIOLET</i>, a darkly comedic fantasy
-                    <blockquote>
-                        <i>A witch. A prince. A curse. A kiss.<br/>You think you know the story, but this is no fairy tale.</i>
-                    </blockquote>
-                </li>
-            </ul>
         </div>
 
         <div id='contact' class='section'>
@@ -254,6 +287,48 @@
             </ul>
 
         </div>
+
+        <div id='works' class='section'>
+            <h2>+ Works +</h2>
+            <h4>Published</h4>
+            <ul>
+                <li>
+                    <div class='text-col'>
+                        <a href="https://foreshadowya.com/articles/12-fools" target="_blank">“Fools”</a>, Foreshadow YA (Issue 2, Feb 2019)
+                        <blockquote>
+                            <i>Ahma says my parents were a pair of fools. Runaways, who bartered the promise of my mother's womb to a witch to escape a kingdom that would sooner see them dead than in love. </i>
+                        </blockquote>
+                        <hr/>
+                        <p class='small'>
+
+                            “With ‘Fools,’  Gina Chen has written a lush, compelling fantasy that transports the reader to a very unusual island. The main character Fanny is instantly lovable (despite her apparent lack of a heart) and the moment I hit the last page of this jewel of a story, I was desperate for more.”
+                            <br/>— Sabaa Tahir, #1 New York Times bestselling author
+                        </p>
+                    </div>
+                    <div class='img-col'>
+                        <a href="https://foreshadowya.com/articles/12-fools" target="_blank"><img src='assets/cover-fools.jpg' alt='Cover of Fools' /></a>
+                    </div>
+                    
+                </li>
+            </ul>
+            <h4>Currently Writing</h4>
+            <ul>
+                <li>
+                    <div class='text-col'>
+                        <i>VILE VILE VIOLET</i>, a darkly comedic fantasy
+                        <blockquote>
+                            <i>A witch. A prince. A curse. A kiss.<br/>You think you know the story, but this is no fairy tale.</i>
+                        </blockquote>
+                        <hr/>
+                        <p class='small'>Artwork by Alexa Sharpe</p>
+                    </div>
+                    <div class='img-col'>
+                        <img src='assets/cover-vvv.jpg' alt='Cover of Vile Vile Violet' />
+                    </div>
+                </li>
+            </ul>
+        </div>
+
     </div>
     <footer>
         &copy; Gina Chen
