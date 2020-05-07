@@ -28,7 +28,10 @@
 
 
 
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700" rel="stylesheet">
+
+
+
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Eczar:wght@700&display=swap" rel="stylesheet">
 
     <style>
         body {
@@ -68,11 +71,10 @@
             flex-wrap: wrap;
             align-items: center;
             justify-content: space-around;
-            font-family: 'Libre Baskerville', serif;
-            font-size: 20px;
+            font-family: 'Eczar', 'Libre Baskerville', serif;
+            font-size: 24px;
             color: black;
             padding: 20px;
-            font-style: italic;
             text-align: center;
             letter-spacing: 2px;
             margin: 0 auto;
@@ -85,26 +87,32 @@
         }
 
         h2 {
-            text-transform: uppercase;
-            color: #777;
+            font-family: 'Eczar', 'Libre Baskerville', serif;
+            color: #608a46;
             font-weight: normal;
             letter-spacing: 3px;
-            font-size: .9em;
             text-align: center;
             margin: 30px;
         }
 
         h4 {
-            text-transform: uppercase;
-            font-size: 12px;
+            font-size: 14px;
             color: #777;
             font-weight: normal;
             letter-spacing: 1px;
         }
 
+        h5 {
+            font-family: 'Eczar';
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+            font-size: 22px;
+        }
+
         ul li {
             margin-bottom: 10px;
-            list-style: circle;
+            list-style: square;
         }
 
         blockquote {
@@ -258,13 +266,13 @@
             <a href='#about' class='header-link'>
                 about
             </a>
-            <div>/</div>
+            <div>&#9670;</div>
             <a href='#contact' class='header-link'>
                 contact
             </a>
-            <div>/</div>
+            <div>&#9670;</div>
             <a href='#works' class='header-link'>
-                works
+                stories
             </a>
         </div>
     </header>
@@ -274,13 +282,14 @@
                 <img src='assets/portrait.jpg' alt='Photo of Gina Chen' />
             </div>
             <div class='text-col'>
-                <p><span class='big'>Gina Chen</span> is an author, software engineer, and occasional artist. She spent most of her life thinking she hated writing, until she churned out a few hundred thousand words of fanfiction and decided that <i>maybe</i> she was a writer. She tells stories about (anti)heroines, the unfortunate creatures who love them, and the kind of cleverness that brings trouble in its wake.</p>
-                <p>She resides in sunny Southern California.</p>
+                <p><span class='big'>Gina Chen</span> is an author, software engineer, and occasional artist. She spent most of her life thinking she hated writing, until she churned out a few hundred thousand words of fanfiction and decided that <i>maybe</i> she was a writer. She tells stories about (anti)heroines, the unfortunate creatures who love them, and the kind of cleverness that brings trouble in its wake. She resides in sunny Southern California.</p>
+                <p>She is represented by Elana Roth Parker of <a href="https://www.ldlainc.com/about" target="_blank">Laura Dail Literary Agency</a>.</p>
+
             </div>
         </div>
 
         <div id='contact' class='section'>
-            <h2>+ Contact +</h2>
+            <h2>contact</h2>
             <ul>
                 <li>Email: <a href='mailto:ginachenauthor@gmail.com'>ginachenauthor@gmail.com</a></li>
                 <li>Follow on Twitter: <a href='https://twitter.com/actualgina'>@actualgina</a></li>
@@ -289,12 +298,13 @@
         </div>
 
         <div id='works' class='section'>
-            <h2>+ Works +</h2>
+            <h2>stories</h2>
             <h4>Published</h4>
             <ul>
                 <li>
                     <div class='text-col'>
-                        <a href="https://foreshadowya.com/articles/12-fools" target="_blank">“Fools”</a>, Foreshadow (Feb 2019) and forthcoming <i>Foreshadow: The Magic of Reading &amp; Writing YA</i> (Algonquin Young Readers, Oct 2020)
+                        <h5><a href="https://foreshadowya.com/articles/12-fools" target="_blank">“Fools”</a></h5>
+                        <p>Featured in Foreshadow (Feb 2019) and forthcoming <i>Foreshadow: The Magic of Reading &amp; Writing YA</i> (Algonquin Young Readers, Oct 2020)</p>
                         <blockquote>
                             <i>Ahma says my parents were a pair of fools. Runaways, who bartered the promise of my mother's womb to a witch to escape a kingdom that would sooner see them dead than in love. </i>
                         </blockquote>
@@ -315,12 +325,13 @@
             <ul>
                 <li>
                     <div class='text-col'>
-                        <i>Vile Vile Violet</i>, a darkly comedic fantasy
+                        <h5>VILE VILE VIOLET</h5>
+                        <p>A sardonic, sharp-edged fairytale romance</p>
                         <blockquote>
                             <i>A witch. A prince. A curse. A kiss.<br/>You think you know the story, but this is no fairy tale.</i>
                         </blockquote>
                         <hr/>
-                        <p class='small'>Artwork by Alexa Sharpe</p>
+                        <p class='small'>Artwork by <a href="https://www.alexasharpe.com/" target="_blank">Alexa Sharpe</a></p>
                     </div>
                     <div class='img-col'>
                         <img src='assets/cover-vvv.jpg' alt='Cover of Vile Vile Violet' />
