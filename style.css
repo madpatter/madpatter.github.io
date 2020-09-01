@@ -1,0 +1,226 @@
+body {
+            font-family: 'Libre Baskerville', serif;
+            font-size: 16px;
+            line-height: 2em;
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ff5744;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        header {
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px 50px;
+        }
+        header img {
+            max-width: 200px;
+        }
+
+        header .img-col {
+            text-align: center;
+        }
+
+        header .nav {
+            max-width: 600px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            font-family: 'Eczar', 'Libre Baskerville', serif;
+            font-size: 24px;
+            color: black;
+            padding: 20px;
+            text-align: center;
+            letter-spacing: 2px;
+            margin: 0 auto;
+        }
+
+        footer {
+            padding: 30px 50px;
+            text-align: center;
+            color: #777;
+        }
+
+        h2 {
+            font-family: 'Eczar', 'Libre Baskerville', serif;
+            color: #608a46;
+            font-weight: normal;
+            letter-spacing: 3px;
+            text-align: center;
+            margin: 30px;
+        }
+
+        h4 {
+            font-size: 14px;
+            color: #777;
+            font-weight: normal;
+            letter-spacing: 1px;
+        }
+
+        h5 {
+            font-family: 'Eczar';
+            margin: 0;
+            padding: 0;
+            font-weight: normal;
+            font-size: 22px;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+            list-style: square;
+        }
+
+        blockquote {
+            margin: 1em 0 1em 1em;
+        }
+
+        hr {
+            border-width: 0px;
+            height: 1px;
+            background-color: #777;
+        }
+
+        .content {
+            padding: 20px 50px;
+            margin: 0 auto;
+        }
+
+        .section {
+            padding-bottom: 30px;
+            margin: 0 auto;
+        }
+
+        #about {
+            display: flex;
+            max-width: 800px;
+        }
+
+        #contact {
+            max-width: 800px;
+        }
+
+        #about .img-col {
+            margin: 20px 40px 20px 0;
+            flex: 0 1 auto;
+            text-align: center;
+        }
+
+        #about .img-col img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 10px;
+        }
+
+        #about .text-col {
+            flex: 0 1 80%;
+        }
+
+        #works {
+            max-width: 1280px;
+        }
+
+        .big {
+            font-size: 1.3em;
+        }
+
+        .small {
+            font-size: .8em;
+        }
+
+
+        #works .work {
+            padding: 0;
+            margin-bottom: 40px;
+            display: flex;
+        }
+
+        #works .img-col img {
+            padding: 10px;
+            border: 1px solid #ddd;
+            max-width: calc(100% - 2px);
+        }
+
+        #works .img-col {
+            flex: 0 1 auto;
+        }
+
+        #works .text-col {
+            margin-right: 5%;
+            flex: 1 0 60%;
+        }
+
+        .review {
+            font-size: .8em;
+            padding: 1em;
+        }
+
+        .review-src {
+            font-style: italic;
+            text-align: right;
+        }
+
+        @media screen and (max-width: 768px) {
+            
+            header {
+                flex-wrap: wrap;
+                padding: 20px 0px;
+                width: 90%;
+            }
+
+            header .img-col {
+                width: 100%;
+                margin-right: 0;
+            }
+
+        }
+
+        @media screen and (max-width: 600px) {
+            .content {
+                padding: 20px;
+            }
+
+            #about {
+                flex-wrap: wrap-reverse;
+            }
+
+            #about .img-col {
+                flex: 0 1 100%;
+                margin: 20px;
+            }
+
+            #about .text-col {
+                flex: 0 1 100%;
+                margin: 0;
+            }
+            #about .img-col img {
+                max-width: 150px;
+            }
+
+            #works .work {
+                flex-wrap: wrap-reverse;
+            }
+
+            #works .img-col {
+                flex: 0 1 100%;  
+                text-align: center;
+                margin: 0 0 20px;              
+            }
+
+            #works .img-col img {
+                max-height: 200px;
+            }
+
+            #works .text-col {
+                flex: 0 1 100%;
+                margin: 0;
+            }
+        }
