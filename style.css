@@ -112,6 +112,17 @@ body {
             max-width: 800px;
         }
 
+        #contact ul li {
+            list-style: none; 
+        }
+
+        .social-icon {
+            width: 25px;
+            height: 25px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+
         #about .img-col {
             margin: 20px 40px 20px 0;
             flex: 0 1 auto;
@@ -120,7 +131,7 @@ body {
 
         #about .img-col img {
             width: 100%;
-            max-width: 250px;
+            max-width: 300px;
             border-radius: 10px;
         }
 
@@ -206,7 +217,7 @@ body {
                 margin: 0;
             }
             #about .img-col img {
-                max-width: 150px;
+                max-width: 200px;
             }
 
             #works .work {
