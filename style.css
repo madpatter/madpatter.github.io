@@ -19,6 +19,9 @@ body {
         header {
             margin: 0 auto;
             padding: 20px 50px;
+            display: flex;
+            justify-content: space-around;
+
         }
         header img {
             max-width: 150px;
@@ -39,7 +42,6 @@ body {
             padding: 20px;
             text-align: center;
             letter-spacing: 2px;
-            margin: 0 auto;
         }
 
         header .header-link {
@@ -183,12 +185,17 @@ body {
 
         .review {
             font-size: .8em;
-            padding: 1em;
+            padding: .5em 1em;
+        }
+
+        .review-text {
+            margin-bottom: 0;
         }
 
         .review-src {
             font-style: italic;
             text-align: right;
+            margin-top: 0;
         }
 
         .img-header img {
