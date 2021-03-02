@@ -192,6 +192,15 @@ body {
             flex: 1 0 60%;
         }
 
+        #works .col-reverse .text-col {
+            margin-left: 5%;
+            flex: 1 0 60%;
+        }
+
+        #works .col-reverse {
+            flex-direction: row-reverse;
+        }
+
         .review {
             font-size: .8em;
             padding: .5em 1em;
@@ -211,6 +220,21 @@ body {
             max-width: 100%;
             display: block;
             margin: 0 auto;
+        }
+
+        .character {
+            text-align: center;
+            margin-bottom:50px;
+        }
+
+        .character img {
+            max-width: 280px;
+            padding: 10px;
+        }
+
+        .character .text-col {
+            margin: 0 auto;
+            max-width: 500px;
         }
 
         @media screen and (max-width: 768px) {
@@ -276,8 +300,13 @@ body {
                 max-height: 200px;
             }
 
-            #works .text-col {
+            #works .text-col, #works .col-reverse .text-col {
                 flex: 0 1 100%;
                 margin: 0;
+            }
+
+            .character img {
+                max-width: 150px;
+                padding: 10px;
             }
         }
