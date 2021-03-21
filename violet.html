@@ -30,9 +30,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Eczar:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
 <link href="style.css" type="text/css" rel="stylesheet">
+
+<style>
+    header {
+        background: black;
+        padding: 0;
+    }
+
+    header .nav {
+        font-family:'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 5px;
+        color: white;
+    }
+
+    header .nav a {
+        margin: 0 10px;
+    }
+
+    .content-wrap-lol {
+        max-width:1200px;
+        margin: 0 auto; 
+    }
+</style>
+
 </head>
 <body style="background-image:url('assets/home-bg.jpg');">
-    <div class='content-wrap-lol' style="max-width:1200px; margin: 0 auto; border-left:1px solid #8b5125; border-right: 1px solid #8b5125;">
+    <div class='content-wrap-lol'>
+    <header>
+        <div class='nav'>
+            <div>Gina Chen &raquo;</div>
+            <a href='/' class='header-link'>
+                home
+            </a>
+            <div>&#9670;</div>
+            <a href='/about' class='header-link'>
+                about
+            </a>
+            <div>&#9670;</div>
+            <a href='/books' class='header-link'>
+                books
+            </a>
+            <div>&#9670;</div>
+            <a href='/contact' class='header-link'>
+                contact
+            </a>
+            <div>&#9670;</div>
+            <a href='https://actualgina.tumblr.com/' class='header-link' target='_blank'>
+                blog
+            </a>
+        </div>
+    </header>
     <div class='img-header' style="background:#ececdf; margin:0;">
         <img src='assets/vmot-header.png' alt='Violet Made of Thorns header' style="display:block; margin: 0 auto; border:none;"/>
     </div>
@@ -47,7 +96,7 @@
             <div class='work col-reverse'>
                 <div class='text-col'>
                      <p>
-                        Violet is a prophet and a liar, influencing the court as Seer with her cleverly phrased—and not always true—divinations. Honesty is for suckers like the oh-so-<i>not</i>-charming Prince Cyrus, who plans to strip her of her title once he's crowned.
+                        <span class='small-caps'>Violet is a prophet and a liar,</span> influencing the court as Seer with her cleverly phrased—and not always true—divinations. Honesty is for suckers like the oh-so-<i>not</i>-charming Prince Cyrus, who plans to strip her of her title once he's crowned.
                     </p>
                     <p>
                         After the king asks her to falsely prophesy Cyrus's love story for an upcoming ball, Violet awakens a dreaded curse about the prince's future bride. Her wits may protect her in the ruthless court, but they can't protect her against fate—nor the doomed attraction growing between her and the prince . . .
@@ -76,7 +125,7 @@
 
 
 
-        <h2>Meet the Characters</h2>
+        <h2 class='small-caps'>Meet the Characters</h2>
 
         <div class='character'>
 
@@ -86,7 +135,7 @@
             </div>
             <div class='text-col'>
 
-                <p><span class='big'>Violet</span> is the Seer of a court she has never completely belonged in. Clever to a fault, she'll chase victory even if it leads her over the cliff's edge.</p>
+                <p><span class='big small-caps'>Violet</span> is Seer of a court she has never completely belonged in. Clever to a fault, she'll chase victory even if it leads her over the cliff's edge.</p>
 
                 <p><i>"I changed the truth and the stars didn't fall."</i></p>
                 <img src='assets/icon-divider.png' /> 
@@ -98,14 +147,15 @@
 
         <div class='character'>
 
-            <div class='img-col'>
+           
+             <div class='img-col'>
                 <img src='assets/vmot-cyrus1.jpg' alt='Cyrus' />
                 <img src='assets/vmot-cyrus2.jpg' alt='Cyrus' />
             </div>
 
             <div class='text-col'>
 
-                <p>Where Violet is too clever, <span class='big'>Prince Cyrus</span> is too honorable—beloved when sitting pretty and less so when clashing with his kingdom's leadership and Seer.</p>
+                <p>Where Violet is too clever, <span class='big small-caps'>Prince Cyrus</span> is too honorable—beloved when sitting pretty and less so when clashing with his kingdom's leadership and Seer.</p>
 
                 <p>A charming smile can mask so many secrets, and he's had such practice.</p>
                 <img src='assets/icon-divider.png' style='' /> 
@@ -115,7 +165,6 @@
 
         <p class="big" style="text-align:center">More coming soon . . .<p>
 
-        <p class="big" style="text-align:center; margin-top:100px;"><a href='/'>Return to main site</a><p>
         <footer>
             &copy; Gina Chen
         </footer>
