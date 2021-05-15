@@ -47,14 +47,71 @@
 
     header .nav a {
         margin: 0 10px;
+        color: #F9BB34;
+    }
+    
+    .content {
+    	margin: 0;
+    	background:#ececdf;
+    	padding-top: 0;
     }
 
     .content-wrap-lol {
         max-width:1200px;
         margin: 0 auto; 
     }
+    
+    .authors-note {
+    	padding: 50px 0 70px;
+    	background: #f7f7f7;	
+	    	
+    }
+    .authors-note p {
+    	max-width: 750px;
+    	margin: 0 auto;
+    	padding: 10px 20px;
+    }
+    
+    .authors-note ul {
+    	max-width: 750px;
+    	margin: 0 auto;
+    }
+    
+    .divider {
+    	margin: 50px auto;
+    	text-align: center;
+    }
+    .characters {
+    	padding-top: 50px;
+    }
+    
+    .sub-nav {
+    	text-align: center;
+    	padding-top: 0;
+    	letter-spacing: .5px;
+    }
+    
+    .sub-nav a {
+    	margin: 0 10px;
+    }
+    
+    footer {
+    	font-size:.8em;
+    }
+    
+    .hidden {
+    	display: none;
+    }
 </style>
 
+
+<script type='text/javascript'>
+	function showElement(id) {
+		document.getElementById(id).style.display = 'block';
+		event.preventDefault();
+	};
+</script>
+	
 </head>
 <body style="background-image:url('assets/home-bg.jpg');">
     <div class='content-wrap-lol'>
@@ -85,18 +142,25 @@
     <div class='img-header' style="background:#ececdf; margin:0;">
         <img src='assets/vmot-header.png' alt='Violet Made of Thorns header' style="display:block; margin: 0 auto; border:none;"/>
     </div>
-    <div class='content' style="margin: 0; background:#ececdf;">
+    <div class='content'>
 
-        <div class='section big' style='text-align:center; color:#3d293d;'>
+		<div class='section sub-nav small-caps'>
+			<a href='#book-info'>Book Info</a> |
+			<a href='#authors-note'>Author and Content Notes</a> |
+			
+			<a href='#characters'>Meet the Characters</a>
+		</div>
+
+        <div class='section big' style='text-align:center;'>
             <p><i>&ldquo;Kings and curses, girls and gods—these are the makings of tales.&rdquo;</i></p>
         </div>
 
 
         <div id='works' class='section'>
             <div class='work col-reverse'>
-                <div class='text-col'>
+                <div class='text-col' id='book-info'>
                      <p>
-                        <span class='small-caps'>Violet is a prophet and a liar,</span> influencing the court as Seer with her cleverly phrased—and not always true—divinations. Honesty is for suckers like the oh-so-<i>not</i>-charming Prince Cyrus, who plans to strip her of her title once he's crowned.
+                        Violet is a prophet and a liar, influencing the court as Seer with her cleverly phrased—and not always true—divinations. Honesty is for suckers like the oh-so-<i>not</i>-charming Prince Cyrus, who plans to strip her of her title once he's crowned.
                     </p>
                     <p>
                         After the king asks her to falsely prophesy Cyrus's love story for an upcoming ball, Violet awakens a dreaded curse about the prince's future bride. Her wits may protect her in the ruthless court, but they can't protect her against fate—nor the doomed attraction growing between her and the prince . . .
@@ -105,7 +169,6 @@
 
                     <ul>
                         <li>Add to <a href="https://www.goodreads.com/book/show/55923578-violet-made-of-thorns" target="_blank">Goodreads</a> / <a href="https://app.thestorygraph.com/books/7b168984-b1f6-4ea0-adcf-775195959fe2" target="_blank">Storygraph</a></li>
-                        <li>Vote for <i>Violet Made of Thorns</i> on <a href='https://www.goodreads.com/list/book/55923578' target='_blank'>anticipated lists</a></li>
                     </ul>
 
                     <h5>For readers interested in:</h5>
@@ -124,52 +187,90 @@
             
         </div>
 
+		<div class='authors-note wide-section' id='authors-note'>
+		
+		        <h2 class='small-caps'>Author's Note</h2>
+
+			<p><span class='big'><i>Violet Made of Thorns</i> is my fairytale love story for cynics.</span> It isn't very pretty sometimes, kind of messy all of the time, but hopeful despite it all—or at least, I think so.</p>
+<p>I wrote Violet for those who feel they only relate to the "unrelatable" characters—the ones who are too cold, too proud, too much and not enough at the same time. Violet isn't your role model or your #girlboss (one of my peeves is ambition being uncritical shorthand for "strong" among heroines, when power is complicated and rarely scrupulous); she is her own contrary character: a prickly girl carving a place for herself in a world she doesn't believe in.</p>
+
+<p>That aside—the story is fun! There's banter and dramatics and princely shirts torn asunder! It borrows elements from fairytales, nods to them, and gets kind of meta with them (but it's <i>not</i> a retelling). As for the romance, it's a bit of an...intense love/hate situation. Think childhood <i>it's complicated</i>-to-<i>it's still complicated.</i></p>
+
+<p>Well, you'll see.</p>
+
+	
+	        <div class='divider'><img src='assets/icon-divider.png'/></div>
 
 
-        <h2 class='small-caps'>Meet the Characters</h2>
+		    <h2 class='small-caps'>Content Warnings and Notes</h2>
+		    
+		    <p><a href='#' id='content-warning-btn' onclick='showElement("content-warning-hidden");'>Click here</a> to display content warnings and notes <b>(contains mild spoilers)</b>.</p>
+		    <br/>
+			<div id='content-warning-hidden' class='hidden'>
+				<ul>
+					<li>one instance of parent harming child physically, themes of emotional manipulation</li>
+					<li>fantasy-typical levels of violence, including death and body horror</li>
+					<li>self-harm in ritual/magical context</li>
+					<li>some instances of casual racism</li>
+				</ul>
+			
+				<p><b>Sexual content:</b> not explicit, does not fade to black</p>
+			
+			</div>
+		</div>
 
-        <div class='character'>
+		<div class='characters' id='characters'>
+			<h2 class='small-caps'>Meet the Characters</h2>
 
-            <div class='img-col'>
-                <img src='assets/vmot-violet2.jpg' alt='Violet' />
-                <img src='assets/vmot-violet1.jpg' alt='Violet' />
-            </div>
-            <div class='text-col'>
+			<div class='character'>
 
-                <p><span class='big small-caps'>Violet</span> is Seer of a court she has never completely belonged in. Clever to a fault, she'll chase victory even if it leads her over the cliff's edge.</p>
+				<div class='img-col'>
+					<img src='assets/vmot-violet2.jpg' alt='Violet' />
+					<img src='assets/vmot-violet1.jpg' alt='Violet' />
+				</div>
+				<div class='text-col'>
 
-                <p><i>"I changed the truth and the stars didn't fall."</i></p>
-                <img src='assets/icon-divider.png' /> 
-            </div>
+					<p><span class='big small-caps'>Violet</span> is Seer of a court she has never completely belonged in. Clever to a fault, she'll chase victory even if it leads her over the cliff's edge.</p>
+
+					<p><i>"I changed the truth and the stars didn't fall."</i></p>
+				</div>
 
 
 
-        </div>
+			</div>
 
-        <div class='character'>
+	        <div class='divider'><img src='assets/icon-divider.png'/></div>
 
-           
-             <div class='img-col'>
-                <img src='assets/vmot-cyrus1.jpg' alt='Cyrus' />
-                <img src='assets/vmot-cyrus2.jpg' alt='Cyrus' />
-            </div>
 
-            <div class='text-col'>
+			<div class='character'>
 
-                <p>Where Violet is too clever, <span class='big small-caps'>Prince Cyrus</span> is too honorable—beloved when sitting pretty and less so when clashing with his kingdom's leadership and Seer.</p>
+		   
+				 <div class='img-col'>
+					<img src='assets/vmot-cyrus1.jpg' alt='Cyrus' />
+					<img src='assets/vmot-cyrus2.jpg' alt='Cyrus' />
+				</div>
 
-                <p>A charming smile can mask so many secrets, and he's had such practice.</p>
-                <img src='assets/icon-divider.png' style='' /> 
-            </div>
-            
-        </div>
+				<div class='text-col'>
 
+					<p>Where Violet is too clever, <span class='big small-caps'>Prince Cyrus</span> is too honorable—beloved when sitting pretty and less so when clashing with his kingdom's leadership and Seer.</p>
+
+					<p>A charming smile can mask so many secrets, and he's had such practice.</p>
+				</div>
+			
+			</div>
+			
+			<div class='divider'><img src='assets/icon-divider.png'/></div>
+
+		</div>
         <p class="big" style="text-align:center">More coming soon . . .<p>
 
         <footer>
-            &copy; Gina Chen
+            <p>&copy; Gina Chen </p>
+            <p>All graphics made with commercial-free images.</p>
         </footer>
     </div>
+
+
 
 </div>
 </body>
