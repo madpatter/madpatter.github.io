@@ -32,6 +32,17 @@
       gtag('config', 'UA-138685474-1');
     </script>
 
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-138685474-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
 
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Eczar:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
@@ -144,7 +155,10 @@
 		document.getElementById(id).style.display = 'block';
 		event.preventDefault();
 	};
-</script>
+
+
+
+</script> 
 	
 </head>
 <body style="background-image:url('assets/home-bg.jpg');">
@@ -190,24 +204,24 @@
 
 					<p>Violet's wits may protect her in the cutthroat court, but they can't change her fate. And as the boundary between hatred and love grows ever thinner with the prince, Violet must untangle a wicked web of deceit in order to save herself and the kingdom—or doom them all.</p>             
 
-					<p class='sff-show' style='text-align:center'>Add to <a href="https://www.goodreads.com/book/show/55923578-violet-made-of-thorns" target="_blank">Goodreads</a> / <a href="https://app.thestorygraph.com/books/7b168984-b1f6-4ea0-adcf-775195959fe2" target="_blank">Storygraph</a></p>
+					<p class='sff-show' style='text-align:center'>Add to <a href="https://www.goodreads.com/book/show/55923578-violet-made-of-thorns" target="_blank" onclick="ga('send', 'event', 'AddVMOT', 'Goodreads');">Goodreads</a> / <a href="https://app.thestorygraph.com/books/7b168984-b1f6-4ea0-adcf-775195959fe2" target="_blank" onclick="ga('send', 'event', 'AddVMOT', 'Storygraph');">Storygraph</a></p>
 
 
 					<div id='preorder' class='preorder-links'>
 					<h5>Preorder &amp; <b>support an indie bookstore</b></h5>
 					<p>
-						<a href='https://www.mystgalaxy.com/book/9780593427538' target='_blank' class='button'><b>&#9733; Mysterious Galaxy</b></a>
-						<a href='https://www.indiebound.org/book/9780593427538' target='_blank' class='button'>Indiebound</a>
+						<a href='https://www.mystgalaxy.com/book/9780593427538' target='_blank' class='button' onclick="ga('send', 'event', 'BuyVMOT', 'MystGalaxy');"><b>&#9733; Mysterious Galaxy</b></a>
+						<a href='https://www.indiebound.org/book/9780593427538' target='_blank' class='button' onclick="ga('send', 'event', 'BuyVMOT', 'Indiebound');">Indiebound</a>
 					</p>
 							<p class='small'>Preorders at <b>Mysterious Galaxy</b> can be signed &amp; personalized! Please specify during checkout.</p>
 				
 					<h5>Preorder from other retailers</h5>
 					<p>
-						<a href='https://www.barnesandnoble.com/w/?ean=9780593427538' target='_blank' class='button'>Barnes &amp; Noble</a>
+						<a href='https://www.barnesandnoble.com/w/?ean=9780593427538' target='_blank' class='button' onclick="ga('send', 'event', 'BuyVMOT', 'BarnesAndNoble');">Barnes &amp; Noble</a>
 						
-						<a href='https://www.amazon.com/Violet-Made-Thorns-Gina-Chen/dp/059342753X/' target='_blank' class='button'>Amazon</a>
+						<a href='https://www.amazon.com/Violet-Made-Thorns-Gina-Chen/dp/059342753X/' target='_blank' class='button' onclick="ga('send', 'event', 'BuyVMOT', 'Amazon');">Amazon</a>
 
-						<a href='https://www.bookdepository.com/Violet-Made-Thorns-Gina-Chen/9780593427538' target='_blank' class='button'>Book Depository</a>
+						<a href='https://www.bookdepository.com/Violet-Made-Thorns-Gina-Chen/9780593427538' target='_blank' class='button' onclick="ga('send', 'event', 'BuyVMOT', 'BookDepository');">Book Depository</a>
 						
 						
 						
@@ -215,11 +229,11 @@
 					
 					<h5>Preorder from Ebook &amp; Audiobook retailers</h5>
 					<p class='order-links'>
-						<a href='https://www.kobo.com/us/en/ebook/violet-made-of-thorns' target='_blank'>Kobo</a> /
-						<a href='https://libro.fm/audiobooks/9780593584835' target='_blank'>Libro.fm</a> /
-						<a href='https://books.apple.com/us/book/id1592218350' target='_blank'>Apple Books</a> /
-						<a href='https://play.google.com/store/books/details/Gina_Chen_Violet_Made_of_Thorns?id=qHpKEAAAQBAJ' target='_blank'>Google Play (Ebook)</a> /
-						<a href='https://play.google.com/store/audiobooks/details/Gina_Chen_Violet_Made_of_Thorns?id=AQAAAEC8QzgDlM' target='_blank'>Google Play (Audio)</a>
+						<a href='https://www.kobo.com/us/en/ebook/violet-made-of-thorns' target='_blank' onclick="ga('send', 'event', 'BuyVMOT', 'Kobo');">Kobo</a> /
+						<a href='https://libro.fm/audiobooks/9780593584835' target='_blank' onclick="ga('send', 'event', 'BuyVMOT', 'LibroFm');">Libro.fm</a> /
+						<a href='https://books.apple.com/us/book/id1592218350' target='_blank' onclick="ga('send', 'event', 'BuyVMOT', 'AppleBooks');">Apple Books</a> /
+						<a href='https://play.google.com/store/books/details/Gina_Chen_Violet_Made_of_Thorns?id=qHpKEAAAQBAJ' target='_blank' onclick="ga('send', 'event', 'BuyVMOT', 'GooglePlayEbook');">Google Play (Ebook)</a> /
+						<a href='https://play.google.com/store/audiobooks/details/Gina_Chen_Violet_Made_of_Thorns?id=AQAAAEC8QzgDlM' target='_blank' onclick="ga('send', 'event', 'BuyVMOT', 'GooglePlayAudio');">Google Play (Audio)</a>
 						
 					</p>
 					
@@ -232,7 +246,7 @@
                     <p class='small sff-hide' style='margin:0'>(<a href='assets/cover-vmot-hires.jpg' target='_blank'>Cover Image</a>)</p>
                     <p class='small small-caps'>A darkly enchanting fantasy debut perfect for fans of <i>The Cruel Prince</i> and <i>Serpent &amp; Dove</i>.</p>
                     <p><span class='small-caps'>On sale July 26</span></p>
-                    <p class='sff-hide'><b>Add to <a href="https://www.goodreads.com/book/show/55923578-violet-made-of-thorns" target="_blank">Goodreads</a> / <a href="https://app.thestorygraph.com/books/7b168984-b1f6-4ea0-adcf-775195959fe2" target="_blank">Storygraph</a></b>
+                    <p class='sff-hide'><b>Add to <a href="https://www.goodreads.com/book/show/55923578-violet-made-of-thorns" target="_blank" onclick="ga('send', 'event', 'AddVMOT', 'Goodreads');">Goodreads</a> / <a href="https://app.thestorygraph.com/books/7b168984-b1f6-4ea0-adcf-775195959fe2" target="_blank" onclick="ga('send', 'event', 'AddVMOT', 'Storygraph');">Storygraph</a></b>
                     </p>
                     
                 </div>
