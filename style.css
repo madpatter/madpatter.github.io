@@ -9,7 +9,7 @@ body {
 
         a {
             text-decoration: none;
-            color: #ff5744;
+            color: #e44937;
         }
 
         a:hover {
@@ -17,15 +17,12 @@ body {
         }
 
         a.button {
-            border: 4px solid #ff5744;
+            border: 4px solid #e44937;
             border-radius: 10px;
             padding: 10px 20px;
-
-        }
-
-		.button {
-			background: #ff5744;
+			background: #e44937;
 			color: white;
+			display:inline-block;
 		}
 		
 		.button:hover {
@@ -43,7 +40,7 @@ body {
 
         }
         header img {
-            max-width: 150px;
+            max-width: 200px;
         }
 
         header .img-col {
@@ -104,9 +101,12 @@ body {
             font-size: 22px;
         }
 
+		ul {
+			list-style: square;
+		}
+		
         ul li {
             margin-bottom: 10px;
-            list-style: square;
         }
 
         blockquote {
@@ -144,7 +144,7 @@ body {
         }
 
         #presskit img {
-            max-width: 300px;
+            max-height: 300px;
         }
 
         .social-icon {
@@ -260,6 +260,14 @@ body {
         	flex: 1 1 50%;
         }
         
+        .divider img {
+			max-width:300px;
+		}
+        
+    
+		.order-links a {
+			display:inline-block;
+		}
 
         @media screen and (max-width: 768px) {
             
@@ -279,8 +287,19 @@ body {
             .img-header img {
             }
         }
+        
+    	@media screen and (min-width: 601px) {	
+			.sff-show {
+				display: none;
+			}
+    	}		
 
-        @media screen and (max-width: 600px) {
+
+        @media screen and (max-width: 600px) {			
+			.sff-hide {
+				display: none;
+			}
+        
             .content {
                 padding: 20px;
             }
@@ -326,12 +345,16 @@ body {
             }
 
             .work .img-col img {
-                max-height: 200px;
+                max-height: 250px;
             }
 
             .work .text-col, .work.col-reverse .text-col {
                 flex: 0 1 100%;
                 margin: 0;
             }
+            
+            .divider img {
+				max-width:150px;
+			}
 
         }
