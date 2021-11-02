@@ -26,6 +26,17 @@
       gtag('config', 'UA-138685474-1');
     </script>
 
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-138685474-1', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
 
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Eczar:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 
@@ -44,6 +55,10 @@
             <div>&#9670;</div>
             <a href='/about' class='header-link'>
                 about
+            </a>
+            <div>&#9670;</div>
+            <a href='/violet' class='header-link'>
+                violet
             </a>
             <div>&#9670;</div>
             <a href='/books' class='header-link'>
@@ -71,15 +86,15 @@
 
                     <h5>Preorder Now</h5>
 					<ul class='order-links'>
-						<li><b>Support an indie bookstore: <a href='https://www.mystgalaxy.com/book/9780593427538' target='_blank'>Mysterious Galaxy</a> /
-						<a href='https://www.indiebound.org/book/9780593427538' target='_blank'>Indiebound</a></b>
+						<li><b>Support an indie bookstore: <a href='https://www.mystgalaxy.com/book/9780593427538' target='_blank' onclick="ga('send', 'event', 'BuyVMOT', 'MystGalaxy');">Mysterious Galaxy</a> /
+						<a href='https://www.indiebound.org/book/9780593427538' target='_blank' onclick="ga('send', 'event', 'BuyVMOT', 'Indiebound');">Indiebound</a></b>
 						<br/>
 						<span class='small'>Preorders at <b>Mysterious Galaxy</b> can be signed &amp; personalized! Please specify during checkout.</span>
-						<li><a href='https://www.barnesandnoble.com/w/?ean=9780593427538' target='_blank' >Barnes &amp; Noble</a> / 
-						<a href='https://www.amazon.com/Violet-Made-Thorns-Gina-Chen/dp/059342753X/' target='_blank'>Amazon</a> /
-						<a href='https://www.bookdepository.com/Violet-Made-Thorns-Gina-Chen/9780593427538' target='_blank'>Book Depository</a> /
+						<li><a href='https://www.barnesandnoble.com/w/?ean=9780593427538' target='_blank' onclick="ga('send', 'event', 'BuyVMOT', 'BarnesAndNoble');">Barnes &amp; Noble</a> / 
+						<a href='https://www.amazon.com/Violet-Made-Thorns-Gina-Chen/dp/059342753X/' target='_blank' onclick="ga('send', 'event', 'BuyVMOT', 'Amazon');">Amazon</a> /
+						<a href='https://www.bookdepository.com/Violet-Made-Thorns-Gina-Chen/9780593427538' target='_blank' onclick="ga('send', 'event', 'BuyVMOT', 'BookDepository');">Book Depository</a> /
 						
-						<a href='https://www.penguinrandomhouse.com/books/676578/' target='_blank'>Other retailers</a>
+						<a href='https://www.penguinrandomhouse.com/books/676578/' target='_blank' onclick="ga('send', 'event', 'BuyVMOT', 'OtherRetailers');">Other retailers</a>
 						
 						
 						</li>
@@ -89,7 +104,7 @@
                 </div>
                 <div class='img-col'>
                     <img src='assets/cover-vmot.jpg' alt='Violet Made of Thorns cover' />
-                    <p>Add to <a href="https://www.goodreads.com/book/show/55923578-violet-made-of-thorns" target="_blank">Goodreads</a> / <a href="https://app.thestorygraph.com/books/7b168984-b1f6-4ea0-adcf-775195959fe2" target="_blank">Storygraph</a></p>
+                    <p>Add to <a href="https://www.goodreads.com/book/show/55923578-violet-made-of-thorns" target="_blank" onclick="ga('send', 'event', 'AddVMOT', 'Goodreads');">Goodreads</a> / <a href="https://app.thestorygraph.com/books/7b168984-b1f6-4ea0-adcf-775195959fe2" target="_blank" onclick="ga('send', 'event', 'AddVMOT', 'Storygraph');">Storygraph</a></p>
                 </div>
             </div>
             <br/>
@@ -98,19 +113,19 @@
             <div class='work'>
                     <div class='text-col'>
                         <h3>“Fools” - <i>Foreshadow: Stories to Celebrate the Magic of Reading and Writing YA</i></h3>
-                        <h5 class='subtitle'>Now available from Algonquin Young Readers. Also available to <b><a href="https://foreshadowya.com/articles/12-fools" target="_blank">read online</a></b> at Foreshadow YA.</h5>
+                        <h5 class='subtitle'>Now available from Algonquin Young Readers. Also available to <b><a href="https://foreshadowya.com/articles/12-fools" target="_blank" onclick="ga('send', 'event', 'Read', 'ReadForeshadow');">read online</a></b> at Foreshadow YA.</h5>
                         <p><i>Ahma says my parents were a pair of fools. Runaways, who bartered the promise of my mother's womb to a witch to escape a kingdom that would sooner see them dead than in love. </i>
                         </p>
                         <h5>Buy now</h5>
                         <ul class='order-links' >
-                            <li><b>Support an indie bookstore: <a href="https://www.mystgalaxy.com/book/9781643750798">Mysterious Galaxy</a> / 
-                            <a href="https://bookshop.org/a/55704/9781643750798" target="_blank">Bookshop</a> /
-                            <a href="https://www.indiebound.org/book/9781643750798" target="_blank">Indiebound</a></b></li>
+                            <li><b>Support an indie bookstore: <a href="https://www.mystgalaxy.com/book/9781643750798" onclick="ga('send', 'event', 'BuyForeshadow', 'MystGalaxy');">Mysterious Galaxy</a> / 
+                            <a href="https://bookshop.org/a/55704/9781643750798" target="_blank" onclick="ga('send', 'event', 'BuyForeshadow', 'Bookshop');">Bookshop</a> /
+                            <a href="https://www.indiebound.org/book/9781643750798" target="_blank" onclick="ga('send', 'event', 'BuyForeshadow', 'Indiebound');">Indiebound</a></b></li>
                             <li>
-                            <a href="https://www.barnesandnoble.com/w/foreshadow-nova-ren-suma/1136723006" target="_blank">Barnes &amp; Noble</a> /                                         
-                            <a href="https://www.amazon.com/Foreshadow-Stories-Celebrate-Reading-Writing/dp/1643750798/" target="_blank">Amazon</a> / 
-                            <a href="https://www.bookdepository.com/Foreshadow-Nova-Ren-Suma/9781643750798" target="_blank">Book Depository</a> /   
-                            <a href='https://www.workman.com/products/foreshadow' target='_blank'>Other retailers</a>
+                            <a href="https://www.barnesandnoble.com/w/foreshadow-nova-ren-suma/1136723006" target="_blank" onclick="ga('send', 'event', 'BuyForeshadow', 'BarnesAndNoble');">Barnes &amp; Noble</a> /                                         
+                            <a href="https://www.amazon.com/Foreshadow-Stories-Celebrate-Reading-Writing/dp/1643750798/" target="_blank" onclick="ga('send', 'event', 'BuyForeshadow', 'Amazon');">Amazon</a> / 
+                            <a href="https://www.bookdepository.com/Foreshadow-Nova-Ren-Suma/9781643750798" target="_blank" onclick="ga('send', 'event', 'BuyForeshadow', 'BookDepository');">Book Depository</a> /   
+                            <a href='https://www.workman.com/products/foreshadow' target='_blank' onclick="ga('send', 'event', 'BuyForeshadow', 'OtherRetailers');">Other retailers</a>
                             </li>
                         </ul>
                         <h5>Praise for <b>Foreshadow</b> and <b>"Fools"</b></h5>
