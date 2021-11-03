@@ -37,6 +37,7 @@ body {
 		}
 		
 		.boldline:hover {
+			color: #777;
 			border-bottom: 2px dotted #777;
 		}
 		
