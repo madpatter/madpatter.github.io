@@ -25,8 +25,19 @@ body {
 			display:inline-block;
 		}
 		
-		.button:hover {
+		a.boldline {
+    		border-bottom: 2px dotted #e44937;
+    		padding: 0 3px;
+    		display:inline-block;
+			margin: 7px 15px 7px 0;
+    	}
+		
+		.button:hover, .boldline:hover {
 			text-decoration: none;
+		}
+		
+		.boldline:hover {
+			border-bottom: 2px dotted #777;
 		}
 		
         header {
