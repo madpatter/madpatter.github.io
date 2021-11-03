@@ -40,6 +40,10 @@ body {
 			border-bottom: 2px dotted #777;
 		}
 		
+		.alt-font {
+			font-family: Montserrat, sans-serif;
+		}
+		
         header {
             margin: 0 auto;
             padding: 20px 50px;
@@ -276,6 +280,9 @@ body {
 		}
         
     
+    	.order-links {
+    		font-family: Montserrat, sans-serif;
+    	}
 		.order-links a {
 			display:inline-block;
 		}
