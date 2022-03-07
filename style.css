@@ -248,16 +248,20 @@ body {
         .review {
             font-size: .8em;
             padding: .5em 1em;
+            			line-height:1.8em;
+
         }
 
         .review-text {
             margin-bottom: 0;
+            
         }
 
         .review-src {
-            font-style: italic;
-            text-align: right;
-            margin-top: 0;
+    		font-family: Montserrat, sans-serif;
+            text-align: right;            
+			margin-top: 20px;
+			line-height: 1.4em;
         }
 
         .img-header img {
@@ -286,6 +290,27 @@ body {
     	}
 		.order-links a {
 			display:inline-block;
+		}
+		
+		
+		.blurbs {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items:center;
+			text-align: center;
+		}
+		
+		.blurbs .review {
+			width: 300px;
+			max-width: 700px;
+			padding: 10px 30px;
+			flex: 1 1 auto;
+		}
+		
+		.blurbs .review-src {
+			text-align: center;
+			color: #777;
 		}
 
         @media screen and (max-width: 768px) {
